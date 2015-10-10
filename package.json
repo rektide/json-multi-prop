@@ -1,0 +1,15 @@
+{
+	"name": "json-multi-prop",
+	"version": "1.0.0",
+	"description": "",
+	"main": "json-multi-prop.js",
+	"scripts": {
+		"test": "node .test"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://archive.voodoowarez.com/json-multi-prop"
+	},
+	"author": "rektide de la faye",
+	"license": "X"
+}
