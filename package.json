@@ -11,5 +11,9 @@
 		"url": "https://archive.voodoowarez.com/json-multi-prop"
 	},
 	"author": "rektide de la faye",
-	"license": "X"
+	"license": "X",
+	"dependencies": {
+		"clarinet": "^0.11.0",
+		"through2": "^2.0.0"
+	}
 }
