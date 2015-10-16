@@ -8,6 +8,7 @@ var
 
 parse.then(function( parsed){
 	assert.deepEqual(parsed, expected)
+	console.log( JSON.stringify(parsed))
 }).catch(function( err){
 	console.log(err)
 	process.exit(1)

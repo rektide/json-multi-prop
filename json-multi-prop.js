@@ -10,7 +10,15 @@ function JsonMultiProps(str){
 		  stack= []
 		function append( o){
 			if( key!== undefined){
-				stack[ stack.length- 1][key]= o
+				var current= stack[ stack.length- 1][ key]
+				if( current){
+					if( !current.splice|| !current.push){
+						current= stack[ stack.length- 1][ key]= [ current]
+					}
+					current.push( o)
+				}else{
+					stack[ stack.length- 1][ key]= o
+				}
 			}else if( stack.length!== 0){
 				stack[ stack.length- 1].push( o)
 			}else{
